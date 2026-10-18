@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Developer Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fc;
+      color: #202943;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #202943;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      color: #91a5ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #91a5ff;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .hero {
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background: white;
+    }
+
+    .hero p {
+      color: #5865d9;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .hero .intro {
+      color: #667085;
+      font-weight: normal;
+      max-width: 560px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #5865d9;
+      color: white;
+      padding: 12px 22px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    h2.section-title {
+      font-size: 27px;
+      margin-bottom: 22px;
+    }
+
+    .about p {
+      max-width: 700px;
+      color: #596579;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills span {
+      background: #e7eaff;
+      color: #3847ac;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid #e4e8f1;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 600px;
+    }
+
+    .project-card p {
+      color: #667085;
+      margin: 12px 0;
+    }
+
+    .project-card a {
+      color: #4656cb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact {
+      background: #202943;
+      color: white;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #aebaff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #667085;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>MyPortfolio.</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>BCA STUDENT | ASPIRING DEVELOPER</p>
+    <h1>Hello, I'm Anirudh Tyagi</h1>
+    <p class="intro">
+      I'm a BCA student learning programming and web development.
+      I enjoy solving problems and building projects that help me
+      improve my technical skills.
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a Bachelor of Computer Applications student at
+      IIMT University. I am developing my skills in programming,
+      web development, and problem-solving. My goal is to gain
+      practical experience through projects and internships.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Problem Solving</span>
+      <span>GitHub</span>
+      <span>Learning Java</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        A responsive portfolio website built using HTML and CSS
+        to showcase my introduction, technical skills, education,
+        and projects.
+      </p>
+      <a href="https://github.com/" target="_blank"
+         rel="noopener noreferrer">
+        My GitHub Profile →
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <p>I'm interested in learning opportunities and internships.</p>
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: Add your LinkedIn profile URL</p>
+  </section>
+
+  <footer>
+    © 2026 Anirudh Tyagi | Built with HTML & CSS
+  </footer>
+</body>
+</html>
